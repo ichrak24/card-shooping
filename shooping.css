@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor:#f09d51;
+    --mainSpacing:0.1rem;
+    --mainBlack:#222;
+    --mainTransition: all 0.3s linear ;
+    --mainGrey:#ececec;
+}
+    .body{
+       color: var(--mainBlack); 
+       background:var(--mainWhite);
+       font-family: "lato" , sans-serif;
+    }
+
+    .navbar navbar-expand-lg navbar-light bg-light{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+.hero{
+  min-height:calc(100vh-60px) ;  
+  background: url(../res/background.webp) center/cover no-repeat ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.banner{
+   text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 2rem;
+
+}
+.banner.title{
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    letter-spacing:var(--mainSpacing) ;
+    margin-bottom: 3rem;
+ 
+}
+.banner.btn{
+    padding: 1rem 3rem;
+    text-transform: uppercase;
+    letter-spacing:var(--mainSpacing) ;
+    font-size: 1rem;
+    background: var(--primaryColor) ;
+    color: var(--mainBlack);
+    border: 1px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    cursor: pointer;
+}
+    .banner-btn:hover{
+background: transparent;
+color: var(--primaryColor);
+    }
+
+.products{
+    display: flex;
+justify-content: space-between;
+
+flex-wrap: wrap;
+
+justify-content: space-between;
+
+zoom: 1;
+max-width: 1015px;
+padding: 0 20px;
+margin: 0 auto;
+position: relative;
+}
+
+h1{
+    color: tomato;
+}
+
+  
+  
+  
+.addToCart i {
+    margin: 0 0 0 10px;
+    font-size: 24px;
+    float: left;
+}
+#add_to {
+    display: inline-block;
+    font-size: 26px;
+    vertical-align: top;
+    margin: 20px 0 0 20px!important;
+    border: 2px solid #707070;
+    border-radius: 50%;
+    padding: 5px;
+}
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.card {
+    margin: 2% 2% ;
+    display: flex;
+        align-items: center;;
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fas {
+    font-size: 30px;
+    color: grey;;
+}
+.quantitybtn{
+    display: flex;
+    justify-content: center;
+    margin: 3%
+}
+.page-link{
+    line-height: 16px;
+    width: 60px;
+    font-size: 1rem;
+
+}
+.card-body a {
+   align-self: center;
+}
